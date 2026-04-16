@@ -11,7 +11,7 @@ function Navbar() {
       <img
         src="https://static.startuptalky.com/2022/06/Amazon-StartupTalky.jpg"
         alt="amazon"
-        className="w-30 h-20 object-contain cursor-pointer"
+        className="w-20 h-10 object-contain cursor-pointer"
 
         onClick={() => navigate("/")}
       />
