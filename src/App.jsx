@@ -13,8 +13,13 @@ import NewReleases from "./pages/NewReleases";
 import Prime from "./pages/Prime";
 import Fashion from "./pages/Fashion";
 import Electronics from "./pages/Electronics";
+import Electronics1 from "./pages/Electronics1";
+
+import ProductDetail from "./pages/ProductDetail";
+import ProductDetail1 from "./pages/ProductDetail1";
 import Pay from "./pages/Pay";
 import Navbar2 from "./components/Navbar2";
+
 function App() {
   return (
     <BrowserRouter>
@@ -36,6 +41,9 @@ function App() {
 <Route path="/fashion" element={<Fashion />} />
 <Route path="/electronics" element={<Electronics />} />
 <Route path="/pay" element={<Pay />} />
+<Route path="/product/:id" element={<ProductDetail />} />
+  <Route path="/electronics" element={<Electronics1 />} />
+<Route path="/product/:id" element={<ProductDetail1 />} />
       </Routes>
     </BrowserRouter>
   );
