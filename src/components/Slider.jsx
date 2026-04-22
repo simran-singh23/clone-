@@ -25,7 +25,7 @@ function Slider() {
       image:
         "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1600&q=80",
       title: "Latest Gadgets",
-      subtitle: "Browse API-based electronics products",
+      subtitle: "Explore your electronics collection",
       cta: "Explore Now",
     },
   ];
@@ -46,7 +46,7 @@ function Slider() {
       <img
         src={activeSlide.image}
         alt={activeSlide.title}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover cursor-pointer"
         onClick={() => navigate("/electronics")}
       />
 
@@ -61,6 +61,7 @@ function Slider() {
             {activeSlide.title}
           </h2>
           <p className="mt-4 text-base text-gray-200 md:text-lg">
+            
             {activeSlide.subtitle}
           </p>
           <button

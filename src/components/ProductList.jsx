@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; 
 
 function ProductList() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] =       useState([]);
   const navigate = useNavigate(); 
 
   useEffect(() => {

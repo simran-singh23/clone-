@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 function ProductDetail() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -11,6 +12,9 @@ function ProductDetail() {
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
+
+
+
         setLoading(false);
       })
       .catch((err) => {
@@ -36,7 +40,7 @@ function ProductDetail() {
           />
         </div>
 
-        {/* Details */}
+ 
         <div>
           <h1 className="text-3xl font-bold mb-3">
             {product.title}
@@ -61,6 +65,7 @@ function ProductDetail() {
           </p>
 
           <p className="text-sm text-gray-500 mb-6">
+
             Category: {product.category}
           </p>
 

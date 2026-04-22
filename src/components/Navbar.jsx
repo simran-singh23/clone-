@@ -19,7 +19,10 @@ function Navbar() {
       <div className="flex w-[40%]">
         <input type="text" placeholder="Search Amazon"
 
+
+
           className="w-full px-3 py-2 text-black rounded-l-md"
+          
         />
         <button className="bg-yellow-400 px-4 rounded-r-md">
           

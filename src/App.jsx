@@ -9,23 +9,27 @@ import Cart from "./pages/Cart";
 import Sell from "./pages/Sell";
 import Bestsellers from "./pages/Bestsellers";
 import CustomerService from "./pages/CustomerService";
+
 import NewReleases from "./pages/NewReleases";
+
 import Prime from "./pages/Prime";
 import Fashion from "./pages/Fashion";
 import Electronics from "./pages/Electronics";
-import Electronics1 from "./pages/Electronics1";
-
 import ProductDetail from "./pages/ProductDetail";
-import ProductDetail1 from "./pages/ProductDetail1";
 import Pay from "./pages/Pay";
 import Navbar2 from "./components/Navbar2";
-
+import ProductView from "./pages/ProductView";
+import Fresh from "./pages/Fresh";
+import MxPlayer  from "./pages/MxPlayer";
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Navbar2 />
       <Routes>
+        <Route path="/fresh" element={<Fresh />} />
+               
+                <Route path="/mxplayer" element={<MxPlayer />} />
         <Route path="/" element={<Home />} />
 
         <Route path="/login" element={<Login />} />
@@ -42,8 +46,7 @@ function App() {
 <Route path="/electronics" element={<Electronics />} />
 <Route path="/pay" element={<Pay />} />
 <Route path="/product/:id" element={<ProductDetail />} />
-  <Route path="/electronics" element={<Electronics1 />} />
-<Route path="/product/:id" element={<ProductDetail1 />} />
+<Route path="/productview/:id" element={<ProductView />} />
       </Routes>
     </BrowserRouter>
   );
