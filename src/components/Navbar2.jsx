@@ -11,7 +11,8 @@ function Navbar2() {
       "text-yellow-400" : ""}>Fresh</NavLink>
 
       <NavLink to="/mxplayer" className={({isActive}) => isActive ?
-
+                           
+                           
        "text-yellow-400" : ""}>MX Player</NavLink>
 
                 

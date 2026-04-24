@@ -21,14 +21,15 @@ import Navbar2 from "./components/Navbar2";
 import ProductView from "./pages/ProductView";
 import Fresh from "./pages/Fresh";
 import MxPlayer  from "./pages/MxPlayer";
+import Today  from "./pages/Today";
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Navbar2 />
       <Routes>
+     <Route path="/deals" element={<Today />} />
         <Route path="/fresh" element={<Fresh />} />
-               
                 <Route path="/mxplayer" element={<MxPlayer />} />
         <Route path="/" element={<Home />} />
 
@@ -47,6 +48,7 @@ function App() {
 <Route path="/pay" element={<Pay />} />
 <Route path="/product/:id" element={<ProductDetail />} />
 <Route path="/productview/:id" element={<ProductView />} />
+   <Route path="/" element={<Fashion />} />
       </Routes>
     </BrowserRouter>
   );

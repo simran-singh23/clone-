@@ -71,6 +71,7 @@ const NewReleases = () => {
               </h3>
 
               <p className="text-red-500 font-bold mt-2">
+                
                 ₹{Math.round(item.price * 80)}
               </p>
 
