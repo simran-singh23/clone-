@@ -9,6 +9,8 @@ import Cart from "./pages/Cart";
 import Sell from "./pages/Sell";
 import Bestsellers from "./pages/Bestsellers";
 import CustomerService from "./pages/CustomerService";
+import FooterInfoPage from "./pages/FooterInfoPage";
+import SpotlightProduct from "./pages/SpotlightProduct";
 
 import NewReleases from "./pages/NewReleases";
 
@@ -41,6 +43,8 @@ function App() {
         <Route path="/sell" element={<Sell />} />
 <Route path="/bestsellers" element={<Bestsellers />} />
 <Route path="/service" element={<CustomerService />} />
+<Route path="/footer/:slug" element={<FooterInfoPage />} />
+<Route path="/spotlight/:id" element={<SpotlightProduct />} />
 <Route path="/new" element={<NewReleases />} />
 <Route path="/prime" element={<Prime />} />
 <Route path="/fashion" element={<Fashion />} />
@@ -48,7 +52,6 @@ function App() {
 <Route path="/pay" element={<Pay />} />
 <Route path="/product/:id" element={<ProductDetail />} />
 <Route path="/productview/:id" element={<ProductView />} />
-   <Route path="/" element={<Fashion />} />
       </Routes>
     </BrowserRouter>
   );
